@@ -4,36 +4,69 @@ define("TITLE", "Lorem Ipsum");
 
 require "header.php";
 
-$buttons = array(0, 1, 2, "About", "Contact");
+// Start header & sidenav links
+$buttons = array(
 
-$buttons[0] = array("Prosjekter",
+// Define header link labels without dropdown menu.
+// First entry is main link.
+              array("Prosjekter",
                     "Lorem",
                     "Ipsum",
                     "Dolor",
-                    "Sit");
-
-$buttons[1] = array("Services",
+                    "Sit"),
+              array("Services",
                     "Lorem",
                     "Ipsum",
                     "Dolor",
-                    "Sit");
-
-$buttons[2] = array("Ideals",
+                    "Sit"),
+              array("Ideals",
                     "Lorem",
                     "Ipsum",
                     "Dolor",
-                    "Sit");
+                    "Sit"),
+
+// Define header link labels without dropdown menu
+              "About", "Contact"
+);
+
+$links = array(
+
+// Define header links without dropdown menu.
+// First entry is main link.
+              array("#",
+                    "#",
+                    "#",
+                    "#",
+                    "#"),
+              array("#",
+                    "#",
+                    "#",
+                    "#",
+                    "#"),
+              array("#",
+                    "#",
+                    "#",
+                    "#",
+                    #"),
+
+// Define header links without dropdown menu
+              "#", "#"
+);
+
+// end define header links
 
 echo'<div class="sidenav sn_big" id="sidebar">';
 
+$i = 0;
 foreach ($buttons as $button) {
-  echo'<a href="projects.php">';
+  echo'<a href="' + $links[i] + '">';
   if(is_array($button)) {
     echo $button[0];
   } else {
     echo $button;
   }
   echo'</a>';
+  i++;
 }
 
 echo'
@@ -47,7 +80,7 @@ echo'
   </div>
 ';
 
-
+i = 0;
 foreach ($buttons as $button) {
 
   if(is_array($button))
@@ -58,7 +91,7 @@ foreach ($buttons as $button) {
 
     foreach ($button as  $key => $link) {
       if($key < 1) continue;
-      echo'<a href="projects.phps">'.$link.'</a>';
+      echo'<a href="' + $links[i] + '">'.$link.'</a>';
     }
     echo'</div>
     </div>';
@@ -67,10 +100,12 @@ foreach ($buttons as $button) {
       '.$button.'
     </div>';
   }
+  i++;
 }
 
 echo'<div class="sh_text">';
 
+// etc.
 $fun = array("Natural selection since 1996",
              "Dank free memes for satirical vegans",
              "Do you even <sup>shift</sup> bro?",
