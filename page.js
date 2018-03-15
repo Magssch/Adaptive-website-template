@@ -22,6 +22,8 @@ $(function() {
       $("#menu").hide();
       $("#sidebar").hide();
       $(".logo").css("margin-left", "3%");
+      $(".logo").css("visibility", "visible");
+      $("#header").removeClass("h_small");
       mobileMode = 0;
     }
   }
