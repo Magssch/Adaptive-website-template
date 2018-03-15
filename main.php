@@ -47,7 +47,7 @@ $links = array(
                     "#",
                     "#",
                     "#",
-                    #"),
+                    "#"),
 
 // Define header links without dropdown menu
               "#", "#"
@@ -59,14 +59,14 @@ echo'<div class="sidenav sn_big" id="sidebar">';
 
 $i = 0;
 foreach ($buttons as $button) {
-  echo'<a href="' + $links[i] + '">';
+  echo'<a href="' . $links[$i][0] . '">';
   if(is_array($button)) {
     echo $button[0];
   } else {
     echo $button;
   }
   echo'</a>';
-  i++;
+  $i++;
 }
 
 echo'
@@ -80,7 +80,7 @@ echo'
   </div>
 ';
 
-i = 0;
+$i=0;
 foreach ($buttons as $button) {
 
   if(is_array($button))
@@ -88,10 +88,12 @@ foreach ($buttons as $button) {
     echo'<div class="sh_dropdown" onclick="">
          <div class="sh_dropdown_btn sh_btn_big">'.$button[0].'</div>
          <div class="sh_dropdownmenu">';
-
+    $j=1;
     foreach ($button as  $key => $link) {
       if($key < 1) continue;
-      echo'<a href="' + $links[i] + '">'.$link.'</a>';
+      //echo $links[$i][$j];
+      echo'<a href="' . $links[$i][$j] . '">'.$link.'</a>';
+      $j++;
     }
     echo'</div>
     </div>';
@@ -100,7 +102,7 @@ foreach ($buttons as $button) {
       '.$button.'
     </div>';
   }
-  i++;
+$i++;
 }
 
 echo'<div class="sh_text">';
