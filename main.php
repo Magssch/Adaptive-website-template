@@ -108,11 +108,9 @@ $i++;
 echo'<div class="sh_text">';
 
 // etc.
-$fun = array("Natural selection since 1996",
-             "Dank free memes for satirical vegans",
-             "Do you even <sup>shift</sup> bro?",
-             "😂😋👌💯😩👌👌🔥💯🔥💯🔥💯",
-             "Life is like a box of disappointments");
+$fun = array("Lorem Ipsum Dolor Sit Amet.",
+             "This could be a quote, citation.",
+             "This text is randomly chosen.");
 
 $r = rand(0, count($fun)-1);
 
