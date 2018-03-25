@@ -9,7 +9,7 @@ $buttons = array(
 
 // Define header link labels without dropdown menu.
 // First entry is main link.
-              array("Prosjekter",
+              array("Projects",
                     "Lorem",
                     "Ipsum",
                     "Dolor",
