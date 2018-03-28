@@ -113,7 +113,7 @@ $fun = array("Lorem Ipsum Dolor Sit Amet.",
              "This text is randomly chosen.");
 
 $r = rand(0, count($fun)-1);
-
+//test
 $q = $fun[$r];
 
 echo $q;
