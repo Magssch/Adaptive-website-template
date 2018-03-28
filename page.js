@@ -7,7 +7,7 @@ $(function() {
 
     $(window).width() < 980 ? $(".sh_text").hide() : $(".sh_text").show();
 
-    if($(window).width() < 550) {
+    if($(window).width() < 650) {
       $(".sh_button").hide();
       $(".sh_dropdown").hide();
       $(".sh_divider").hide();

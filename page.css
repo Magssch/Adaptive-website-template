@@ -117,8 +117,8 @@ a:active {
    top: 50%;
    transform: translateY(-50%);
    float: left;
-   padding-left: 1%;
-   padding-right: 1%;
+   padding-left: 1.5%;
+   padding-right: 1.5%;
    letter-spacing: 1px;
    cursor:pointer;
    transition: background-color 0.3s;
@@ -145,8 +145,8 @@ a:active {
   transform: translateY(-50%);
   float: left;
   cursor:pointer;
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
   transition: background-color 0.3s;
   letter-spacing: 1px;
 }
@@ -177,7 +177,7 @@ a:active {
 
 .sh_dropdownmenu a {
     color: white;
-    padding: 12px 12px;
+    padding: 17px 17px;
     text-decoration: none;
     display: block;
 }
