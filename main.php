@@ -111,6 +111,13 @@ $r = rand(0, count($fun)-1);
 $q = $fun[$r];
 
 echo $q;
-require "middle.php";
+
+echo '</div>
+<div class="sh_menu" id="menu">
+  <div class="menubar m_big" id="bar1"></div>
+  <div class="menubar m_big" id="bar2"></div>
+  <div class="menubar m_big" id="bar3"></div>
+</div>
+</div>';
 
  ?>
