@@ -66,7 +66,7 @@ a:active {
   height: 80px;
   transition: 0.3s;
   opacity: 1;
-  box-shadow: 0 1px 10px 0 grey;
+  box-shadow: 0 1px 10px 0 #284770;
 }
 
 .h_small {
@@ -86,7 +86,7 @@ a:active {
   transition: 0.3s;
   visibility: visible;
   opacity: 0.98;
-  box-shadow: 0 1px 10px 0 grey;
+  box-shadow: 0 1px 10px 0 #284770;
 }
 
 .logo {
@@ -272,8 +272,9 @@ a:active {
   height: 50px;
   line-height: 50px;
   background-color: #284770;
-  box-shadow: 0 -1px 10px 0 grey;
+  box-shadow: 0 -1px 10px 0 #284770;
   overflow: hidden;
+  opacity: 0.98;
 }
 
 .sidenav {
@@ -363,16 +364,33 @@ a:active {
   opacity: 0.7;
 }
 
+/* Header image */
 .top {
   min-height: 100%;
   background-image: url('img/bg_test.jpg');
 }
 
-.parallax {
+/* Image of plane */
+.plane {
   min-height: 600px;
-  background-image: url('img/middle.jpg');
+  background-image: url('img/plane.jpg');
+}
+/* Image of panorama */
+.panorama {
+  min-height: 400px;
+  background-image: url('img/panorama.jpg');
+}
+/* Mountain */
+.mountain {
+  min-height: 500px;
+  background-image: url('img/mount.jpg');
 }
 
+/* Bottom */
+.bottom {
+  min-height: 100%;
+  background-image: url('img/hmkg.jpg');
+}
 @media only screen and (max-device-width: 1024px) {
     .bg_img {
         background-attachment: scroll;
@@ -395,4 +413,22 @@ a:active {
   padding-left: 28px;
   font-size: 25px;
   letter-spacing: 10px;
+}
+
+span.cite {
+  position: absolute;
+  left: 5%;
+  top: 75%;
+  color: #fff;
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-style: italic;
+}
+
+
+.some {
+  max-width: 5%;
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
 }
