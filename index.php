@@ -3,7 +3,6 @@
   <div class="caption">
     <span class="border">Modern design</span>
   </div>
-  <br/>
   <span class="cite">"Shoot for the stars"</span>
 </div>
 <div class="mid">
@@ -16,7 +15,7 @@
 </div>
 <div class="bg_img panorama">
   <div class="caption">
-    <span class="border">Grand views</span>
+    <span class="border">Grandeur</span>
   </div>
 </div>
 <div class="mid">
@@ -30,8 +29,9 @@
 </div>
 <div class="bg_img plane">
   <div class="caption">
-    <span class="border">Contemporary symmetry</span>
+    <span class="border">Symmetry</span>
   </div>
+  <span class="cite">Where do you want to go?</span>
 </div>
 <div class="mid">
 <p>Cras finibus tempor lectus, vel consequat magna viverra interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non eros mollis, scelerisque tellus eu, ultricies ex. In vitae elit nunc. In efficitur efficitur tellus eu volutpat. Nam posuere suscipit felis, sit amet tempus diam sagittis sed. Duis porta, tortor nec dignissim imperdiet, sem velit suscipit lacus, at sollicitudin nisi lacus in lectus. Ut erat leo, imperdiet id lacinia vitae, pulvinar et purus. Maecenas eu ultrices ex. Aliquam elit massa, lacinia a fermentum sed, tempus vitae sem. Nam sit amet mauris egestas, lobortis diam eget, feugiat tellus.
@@ -45,7 +45,7 @@
 </div>
 <div class="bg_img mountain">
   <div class="caption">
-    <span class="border">Spectacular experiences</span>
+    <span class="border">Experience</span>
   </div>
 </div>
 <div class="mid">
