@@ -16,14 +16,11 @@ $buttons = array(
                     "Sit"),
               array("Services",
                     "Lorem",
-                    "Ipsum",
-                    "Dolor",
-                    "Sit"),
+                    "Ipsum"),
               array("Ideals",
                     "Lorem",
                     "Ipsum",
-                    "Dolor",
-                    "Sit"),
+                    "Dolor"),
 
 // Define header link labels without dropdown menu
               "About", "Contact"
@@ -40,11 +37,8 @@ $links = array(
                     "#"),
               array("#",
                     "#",
-                    "#",
-                    "#",
                     "#"),
               array("#",
-                    "#",
                     "#",
                     "#",
                     "#"),
@@ -113,7 +107,7 @@ $fun = array("Lorem Ipsum Dolor Sit Amet.",
              "This text is randomly chosen.");
 
 $r = rand(0, count($fun)-1);
-//test
+
 $q = $fun[$r];
 
 echo $q;
