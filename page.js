@@ -29,7 +29,7 @@ $(function() {
   }
 
   $(window).scroll(function() {
-    if ($(document).scrollTop() <= 30) {
+    if ($(document).scrollTop() <= 100) {
       $("#header").addClass("h_big");
       $("#header").removeClass("h_small");
       $("#header").removeClass("h_small_up");
@@ -84,7 +84,7 @@ $(function() {
 
   $(".sh_menu").on('click',
   function() {
-      if ($(document).scrollTop() > 30) {
+      if ($(document).scrollTop() > 100) {
         $("#header").removeClass("h_small");
         $("#header").addClass("h_small_up");
         $(".logo").css("visibility", "visible");
