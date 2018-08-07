@@ -1,6 +1,6 @@
 <?php
 
-define("TITLE", "Lorem Ipsum");
+define("TITLE", "Magnus Schjølberg");
 
 require "header.php";
 
@@ -9,21 +9,14 @@ $buttons = array(
 
 // Define header link labels without dropdown menu.
 // First entry is main link.
-              array("Projects",
-                    "Lorem",
-                    "Ipsum",
-                    "Dolor",
-                    "Sit"),
-              array("Services",
-                    "Lorem",
-                    "Ipsum"),
-              array("Ideals",
-                    "Lorem",
-                    "Ipsum",
-                    "Dolor"),
+              array("Prosjekter",
+                    "Denne nettsiden",
+                    "Winter is Here",
+                    "TBD",
+                    "TBD"),
 
 // Define header link labels without dropdown menu
-              "About", "Contact"
+              "Min CV", "Kontakt meg"
 );
 
 $links = array(
@@ -31,20 +24,13 @@ $links = array(
 // Define header links without dropdown menu.
 // First entry is main link.
               array("#",
-                    "#",
-                    "#",
-                    "#",
-                    "#"),
-              array("#",
-                    "#",
-                    "#"),
-              array("#",
-                    "#",
+                    "about.php",
+                    "https://scratch.mit.edu/projects/171837319/",
                     "#",
                     "#"),
 
 // Define header links without dropdown menu
-              "#", "#"
+              "cv.php", "contact.php"
 );
 
 // end define header links
@@ -53,21 +39,45 @@ echo'<div class="sidenav sn_big" id="sidebar">';
 
 $i = 0;
 foreach ($buttons as $button) {
-  echo'<a href="' . $links[$i][0] . '">';
+  if(is_array($links[$i])) {
+    echo'<a href="' . $links[$i][0] . '">';
+    echo $button[0];
+    echo '</a>';
+
+    foreach($links[$i] as $key => $sublink) {
+      if($key <= 0) continue;
+      echo'<a href="' . $sublink . '" style="font-size: 0.6em; padding-left:48px">- ';
+      echo $button[$key];
+      echo '</a>';
+    }
+
+  } else {
+    echo'<a href="' . $links[$i] . '">';
+  /*}/*
   if(is_array($button)) {
     echo $button[0];
-  } else {
+    foreach($links[$i] as $sublink) {
+
+    }
+  } else {*/
     echo $button;
-  }
+//  }
   echo'</a>';
+  }
   $i++;
 }
 
 echo'
 </div>
 
+
+<div class="content">
+
+
 <div class="header h_big" id="header">
-  <div class="logo" onclick="">
+  <div class="logo" style="';
+//  if(TITLE.length > 12) echo 'font-size: 30px;';
+  echo '" onclick="location.href = \'index.php\'">
     '; echo TITLE; echo'
   </div>
   <div class="sh_divider">
@@ -79,7 +89,7 @@ foreach ($buttons as $button) {
 
   if(is_array($button))
   {
-    echo'<div class="sh_dropdown" onclick="">
+    echo'<div class="sh_dropdown">
          <div class="sh_dropdown_btn sh_btn_big">'.$button[0].'</div>
          <div class="sh_dropdownmenu">';
     $j=1;
@@ -92,7 +102,7 @@ foreach ($buttons as $button) {
     echo'</div>
     </div>';
   } else {
-    echo'<div class="sh_button sh_btn_big" onclick="">
+    echo'<div class="sh_button sh_btn_big" onclick="location.href = \'' . $links[$i] . '\'">
       '.$button.'
     </div>';
   }
@@ -102,9 +112,9 @@ $i++;
 echo'<div class="sh_text">';
 
 // etc.
-$fun = array("Lorem Ipsum Dolor Sit Amet.",
-             "This could be a quote, citation.",
-             "This text is randomly chosen.");
+$fun = array("God stemning siden 1996",
+             "Skrevet i HTML, CSS3, JQuery og PHP",
+             "Atom > Eclipse");
 
 $r = rand(0, count($fun)-1);
 

@@ -1,10 +1,9 @@
 <?php require "main.php"; ?>
-
-<div class="bg_img image1">
+<div class="bg_img about1">
   <div class="caption">
-    <span class="border">Curriculum Vitae</span>
+    <span class="border">Nettside</span>
   </div>
-  <span class="cite">Foten av Arthur's Seat - Edinburgh</span>
+  <span class="cite">Trondheim</span>
 </div>
 <div class="mid_top"></div>
 <div class="mid">
@@ -13,12 +12,12 @@
 <p>Nettsiden er skrevet i ren HTML, CSS3 og PHP, og benytter seg i tillegg av en del Javascript/JQuery. Siden tilpasser seg automatisk alle mulige skjermstørrelser, så forsøk gjerne med å endre størrelsen på nettleservinduet. Dersom du gjør vinduet smalt nok vil også siden dynamisk gå inn i mobilmodus, med meny tilpasset navigasjon på mobile enheter.</p>
 </div>
 <div class="mid_bot"></div>
-<div class="bg_img image2">
+<div class="bg_img about2">
 <!--  <div class="caption">
     <span class="border">Transcendental Cymatic Luminaries</span>
   </div>-->
 
-  <span class="cite">Samlanuten - Hardanger</span>
+  <span class="cite">Hadrian's Wall - England</span>
 </div>
 <div class="mid_top"></div>
 <div class="mid">
@@ -30,11 +29,11 @@
 </p>
 </div>
 <div class="mid_bot"></div>
-<div class="bg_img image3">
+<div class="bg_img about3">
 <!--  <div class="caption">
     <span class="border">Symmetry</span>
   </div>-->
-  <span class="cite">Over North Island - New Zealand</span>
+  <span class="cite">Petrin Hill - Praha</span>
 </div>
 <div class="mid_top"></div>
 <div class="mid">
@@ -48,8 +47,8 @@
 </p>
 </div>
 <div class="mid_bot"></div>
-<div class="bg_img image4">
-  <span class="cite">Utsikt fra Arthur's Seat - Edinburgh</span>
+<div class="bg_img about4">
+  <span class="cite">HMKGs Festkonsert 2016 - Oslo Konserthus</span>
 </div>
 <div class="mid_top"></div>
 <div class="mid">
