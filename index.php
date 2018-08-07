@@ -15,7 +15,7 @@
 </div>
 <div class="bg_img panorama">
   <div class="caption">
-    <span class="border">Grandeur</span>
+    <span class="border">Transcendental Cymatic Luminaries</span>
   </div>
 </div>
 <div class="mid">
