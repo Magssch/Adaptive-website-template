@@ -24,8 +24,8 @@ $links = array(
 // Define header links without dropdown menu.
 // First entry is main link.
               array("#",
-                    "about.php",
-                    "https://scratch.mit.edu/projects/171837319/",
+                    "about.php?p=webpage",
+                    "about.php?p=teknostart",
                     "#",
                     "#"),
 

@@ -1,9 +1,17 @@
 <?php require "main.php"; ?>
+
+<?php
+
+if($_GET['p'] == "webpage")
+
+{
+
+?>
+
 <div class="bg_img about1">
   <div class="caption">
     <span class="border">Nettside</span>
   </div>
-  <span class="cite">Trondheim</span>
 </div>
 <div class="mid_top"></div>
 <div class="mid">
@@ -33,7 +41,7 @@
 <!--  <div class="caption">
     <span class="border">Symmetry</span>
   </div>-->
-  <span class="cite">Petrin Hill - Praha</span>
+  <span class="cite">Charles Bridge - Praha</span>
 </div>
 <div class="mid_top"></div>
 <div class="mid">
@@ -48,7 +56,6 @@
 </div>
 <div class="mid_bot"></div>
 <div class="bg_img about4">
-  <span class="cite">HMKGs Festkonsert 2016 - Oslo Konserthus</span>
 </div>
 <div class="mid_top"></div>
 <div class="mid">
@@ -56,4 +63,37 @@
 </p>
 </div>
 <div class="mid_bot"></div>
+
+<?php
+
+} elseif($_GET['p'] == "teknostart") {
+
+  ?>
+
+  <div class="bg_img wih1">
+    <div class="caption">
+      <span class="border">Teknostart 2017</span>
+    </div>
+    <span class="cite">"Winter is here"</span>
+  </div>
+  <div class="mid_top"></div>
+  <div class="mid">
+  <p>Sammen med to andre medelever, Sindre Sivertsen og Hans Kristian Sande, var jeg med og lagde prosjektet som ble stemt frem til 1. plass under kåring av prosjekter på Teknostart i 2017.</p>
+  <p>Teknostart er et oppstartsprosjekt som alle nye studenter på ingeniørlinjene på NTNU går gjennom, og datateknologi har som en del av dette et prosjekt hvor man lager et dataspill i Scratch.</p>
+  <p>Spillet ble laget i løpet av noen timer siste uke i fadderperioden, og vant kåringene på slutten med god margin.<br/> <br/></p>
+  <p><center>Link til spillet: <a href="https://scratch.mit.edu/projects/171837319/" target="_blank">Winter is here</a> (kan spilles i nettleser, men krever Flash)
+
+  <br/><br/><img src="img/winterishere2.jpg" style="width: 100%;" /></center></p>
+  <p>Målet i spillet, som er basert på TV-serien Game of Thrones, er å overleve lengst mulig. Man styrer karakteren Jon Snow og skal forhindre fiendene fra å ta seg opp langs muren, i tillegg til at man må passe på døren på bunnen. Jon Snow får også god hjelp av mange andre kjente fjes fra TV-serien, du kjenner kanskje igjen noen av de ovenfor?</p>
+
+    </div>
+  <div class="mid_bot"></div>
+  <!--<div class="bg_img wih2"></div>-->
+  <?php
+
+}
+
+
+
+ ?>
 <?php require "footer.php"; ?>

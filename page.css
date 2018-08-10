@@ -12,7 +12,7 @@ html, body {
 a:link {
     color: black;
     background-color: transparent;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:visited {
@@ -21,13 +21,7 @@ a:visited {
     text-decoration: none;
 }
 
-a:hover {
-    color: #818181;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a:active {
+a:hover, a:active {
     color: #818181;
     background-color: transparent;
     text-decoration: none;
@@ -217,6 +211,7 @@ a:active {
 
 
 .sh_menu {
+   display: none;
    position: relative;
    float: right;
    right: 0;
@@ -237,6 +232,7 @@ a:active {
   background-color: black;
   transition: background-color 0.1s;
 }
+
 .sh_menu_b {
    position: relative;
    float: right;
@@ -262,6 +258,7 @@ a:active {
   background-color: #ffffff;
   font-family: helvetica, verdana, times;
   box-shadow: 0 10px 15px 0 #b2b2b2, 0 -10px 15px 0 #b2b2b2;
+  transition: 0.2s;
 }
 
 .footer {
@@ -296,6 +293,8 @@ a:active {
     letter-spacing: 1px;
     opacity: 1;
     font-size: 30px;
+    white-space: nowrap;
+    display: none;
 }
 
 .sn_big {
@@ -318,11 +317,6 @@ a:active {
     color: white;
 }
 
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav {font-size: 18px;}
-}
-
 #bar1, #bar2, #bar3 {
     position: relative;
     width: 30px;
@@ -333,15 +327,12 @@ a:active {
     visibility: visible;
 }
 
-
 .change #bar1 {
     transform: rotate(30deg) translate(0, 4.5px) ;
 }
-
 .change #bar2 {
     opacity: 0;
 }
-
 .change #bar3 {
     transform: rotate(-30deg) translate(0, -4.5px) ;
 }
@@ -358,12 +349,10 @@ a:active {
 
 .bg_img {
   position: relative;
-  /*width: 100%;*/
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /*padding-top: 80px;*/
   font-family: "Bebas Neue", verdana, times;
   opacity: 0.8;
   transition: 0.3s;
@@ -371,24 +360,34 @@ a:active {
 
 .bg_img_f {
   filter: grayscale(100%) blur(5px);
-  /*filter: grayscale(100%);*/
   transition: 1s;
 }
 
 /* Header image */
 .image1 {
   min-height: 100%;
-  background-image: linear-gradient(to bottom right,  rgba(206, 89, 66, 1), transparent, rgba(76, 217, 100, 0.6)), url('img/bg_test.jpg');
+  background-image: linear-gradient(to bottom right,  rgba(255, 255, 255, 0.8), rgba(76, 217, 100, 0.5)), url('img/bg_test.jpg');
 }
 
 .contact {
   min-height: 100%;
-  background-image: linear-gradient(to bottom right, rgba(255, 149, 0, 0.8), transparent, rgba(149, 20, 255, 0.5)), url('img/contact.jpg');
+  background-image: linear-gradient(to bottom right, rgba(255, 149, 0, 0.5),  rgba(149, 20, 255, 0.4)), url('img/contact.jpg');
 }
 
 .about1 {
   min-height: 100%;
-  background-image: linear-gradient(to bottom right, rgba(255, 71, 20, 0.8), transparent, rgba(66, 134, 244, 0.8)), url('img/himmel2.jpg');
+  background-image: linear-gradient(to bottom right, rgba(255, 71, 20, 0.5), rgba(66, 134, 244, 0.4)), url('img/himmel2.jpg');
+}
+
+.wih1 {
+  min-height: 100%;
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.7), rgba(66, 134, 244, 0.5)), url('img/winterishere.jpg');
+}
+
+/* Image of plane */
+.wih2 {
+  min-height: 500px;
+  background-image: url('img/winterishere2.jpg');
 }
 
 /* Image of plane */
@@ -410,7 +409,7 @@ a:active {
 /* Image of panorama 2 */
 .about3 {
   min-height: 500px;
-  background-image: url('img/prague.jpg');
+  background-image: url('img/praha.jpeg');
 }
 /* Mountain */
 .image4 {
@@ -419,19 +418,14 @@ a:active {
 }
 
 .about4 {
-  min-height: 700px;
-  background-image: url('img/musikk.jpg');
+  min-height: 600px;
+  background-image: url('img/dal.jpg');
 }
 
 /* Bottom */
 .bottom {
   min-height: 100%;
-  background-image: url('img/hmkg.jpg');
-}
-@media only screen and (max-device-width: 1024px) {
-    .bg_img {
-        background-attachment: scroll;
-    }
+  background-image: linear-gradient(to bottom right,  rgba(66, 134, 244, 0.8), rgba(76, 217, 100, 0.7)), url('img/mose.jpeg');
 }
 
 .caption {
@@ -441,6 +435,7 @@ a:active {
   width: 100%;
   text-align: center;
   color: #000;
+  transition: 0.2s;
 }
 
 .caption span.border {
@@ -452,6 +447,8 @@ a:active {
   letter-spacing: 10px;
   box-shadow: 6px 6px 8px 0 #000;
   transition: 0.2s;
+  white-space: nowrap;
+
 }
 
 span.cite {
@@ -460,7 +457,7 @@ span.cite {
   bottom: 35px;
   color: #fff;
   font-size: 20px;
-  letter-spacing: 8px;
+  letter-spacing: 6px;
   font-style: italic;
   text-shadow: 2px 2px 2px #000;
   transition: 0.2s;
@@ -471,6 +468,8 @@ span.cite {
   margin-left: 20px;
   margin-right: 20px;
   cursor: pointer;
+  margin-top:80px;
+  transition: 0.2s;
 }
 
 .cfield {
@@ -507,16 +506,16 @@ span.cite {
   background: linear-gradient(to left, black, black, rgba(0,0,0,0.7));
 }
 
-@media screen and (max-width: 520px) {
+/* Media queries */
+
+@media screen and (max-width: 520px), (max-height: 500px)  {
     .cfield span {
       padding: 10px;
       padding-left: 15px;
       padding-right: 15px;
       font-size: 25px;
     }
-    .cfield {
-      max-width: 370px;
-    }
+    .cfield {max-width: 370px;}
     .caption span.border {
       padding: 14px;
       padding-left: 24px;
@@ -525,13 +524,39 @@ span.cite {
     }
     span.cite {
       font-size: 14px;
-      letter-spacing: 5px;
+      letter-spacing: 4px;
       left: 25px;
       bottom: 20px;
     }
-
-    .logo {
-      font-size:35px;
+    .logo {font-size:35px;}
+    .mid {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     }
+}
 
+@media screen and (max-height: 500px)  {
+  .some {margin-top: 60px;}
+  .bot {top: 30%;}
+}
+
+@media screen and (max-width: 980px)  {
+  .sh_text {display: none;}
+}
+
+@media screen and (max-width: 650px)  {
+  .sh_button, .sh_dropdown, .sh_divider {display: none;}
+  .sh_menu, .sidenav {display: inherit;}
+  .logo {margin-left: 5%;}
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav {font-size: 18px;}
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .bg_img {background-attachment: scroll;}
 }
