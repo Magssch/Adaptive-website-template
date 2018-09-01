@@ -12,7 +12,7 @@ html, body {
 a:link {
     color: black;
     background-color: transparent;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:visited {
@@ -21,13 +21,7 @@ a:visited {
     text-decoration: none;
 }
 
-a:hover {
-    color: #818181;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a:active {
+a:hover, a:active {
     color: #818181;
     background-color: transparent;
     text-decoration: none;
@@ -217,6 +211,7 @@ a:active {
 
 
 .sh_menu {
+   display: none;
    position: relative;
    float: right;
    right: 0;
@@ -237,20 +232,22 @@ a:active {
   background-color: black;
   transition: background-color 0.1s;
 }
+
 .sh_menu_b {
-   position: relative;
-   float: right;
-   right: 0;
-   overflow: hidden;
-   padding-left: 5%;
-   padding-right: 5%;
-   height: 100%;
-   font-family: "Bebas Neue", arial, times;
-   letter-spacing: 1px;
-   cursor: pointer;
-   background-color: black;
-   z-index: 1;
-   visibility: visible;
+  display: none;
+  position: relative;
+  float: right;
+  right: 0;
+  overflow: hidden;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 100%;
+  font-family: "Bebas Neue", arial, times;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-color: black;
+  z-index: 1;
+  visibility: visible;
 }
 
 .mid {
@@ -261,7 +258,9 @@ a:active {
   padding-bottom: 20px;
   background-color: #ffffff;
   font-family: helvetica, verdana, times;
-  box-shadow: 0 10px 15px 0 #b2b2b2, 0 -10px 15px 0 #b2b2b2;
+  /*box-shadow: 0 10px 15px 0 #3a3a3a, 0 -10px 15px 0 #3a3a3a;*/
+  box-shadow: 0 0px 30px 0 #000;
+  transition: 0.2s;
 }
 
 .footer {
@@ -275,7 +274,7 @@ a:active {
   height: 50px;
   line-height: 50px;
   background-color: #284770;
-  box-shadow: 0 0 30px 0 #284770;
+  box-shadow: 0 0px 30px 0 #000;
   overflow: hidden;
   opacity: 1;
   cursor: pointer;
@@ -296,6 +295,8 @@ a:active {
     letter-spacing: 1px;
     opacity: 1;
     font-size: 30px;
+    white-space: nowrap;
+    display: none;
 }
 
 .sn_big {
@@ -318,11 +319,6 @@ a:active {
     color: white;
 }
 
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav {font-size: 18px;}
-}
-
 #bar1, #bar2, #bar3 {
     position: relative;
     width: 30px;
@@ -333,15 +329,12 @@ a:active {
     visibility: visible;
 }
 
-
 .change #bar1 {
     transform: rotate(30deg) translate(0, 4.5px) ;
 }
-
 .change #bar2 {
     opacity: 0;
 }
-
 .change #bar3 {
     transform: rotate(-30deg) translate(0, -4.5px) ;
 }
@@ -358,80 +351,25 @@ a:active {
 
 .bg_img {
   position: relative;
-  /*width: 100%;*/
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /*padding-top: 80px;*/
   font-family: "Bebas Neue", verdana, times;
-  opacity: 0.8;
+  opacity: 0.9;
   transition: 0.3s;
 }
 
 .bg_img_f {
-  filter: grayscale(100%) blur(5px);
-  /*filter: grayscale(100%);*/
+  filter: /*grayscale(100%)*/ blur(4px);
   transition: 1s;
-}
-
-/* Header image */
-.image1 {
-  min-height: 100%;
-  background-image: linear-gradient(to bottom right,  rgba(206, 89, 66, 1), transparent, rgba(76, 217, 100, 0.6)), url('img/bg_test.jpg');
-}
-
-.contact {
-  min-height: 100%;
-  background-image: linear-gradient(to bottom right, rgba(255, 149, 0, 0.8), transparent, rgba(149, 20, 255, 0.5)), url('img/contact.jpg');
-}
-
-.about1 {
-  min-height: 100%;
-  background-image: linear-gradient(to bottom right, rgba(255, 71, 20, 0.8), transparent, rgba(66, 134, 244, 0.8)), url('img/himmel2.jpg');
-}
-
-/* Image of plane */
-.image3 {
-  min-height: 500px;
-  background-image: url('img/plane.jpg');
-}
-/* Image of panorama */
-.image2 {
-  min-height: 500px;
-  background-image: url('img/samlanuten.jpg');
-}
-/* Image of panorama 2 */
-.about2 {
-  min-height: 400px;
-  background-image: url('img/panorama.jpg');
-}
-
-/* Image of panorama 2 */
-.about3 {
-  min-height: 500px;
-  background-image: url('img/prague.jpg');
-}
-/* Mountain */
-.image4 {
-  min-height: 700px;
-  background-image: url('img/mount.jpg');
-}
-
-.about4 {
-  min-height: 700px;
-  background-image: url('img/musikk.jpg');
 }
 
 /* Bottom */
 .bottom {
   min-height: 100%;
-  background-image: url('img/hmkg.jpg');
-}
-@media only screen and (max-device-width: 1024px) {
-    .bg_img {
-        background-attachment: scroll;
-    }
+  /*background-image: url('img/mose3.jpg');*/
+  background-image: linear-gradient(to bottom right,  rgba(66, 134, 244, 0.3), rgba(76, 217, 100, 0.3)), url('img/mose3.jpg');
 }
 
 .caption {
@@ -441,6 +379,7 @@ a:active {
   width: 100%;
   text-align: center;
   color: #000;
+  transition: 0.2s;
 }
 
 .caption span.border {
@@ -452,6 +391,8 @@ a:active {
   letter-spacing: 10px;
   box-shadow: 6px 6px 8px 0 #000;
   transition: 0.2s;
+  white-space: nowrap;
+
 }
 
 span.cite {
@@ -460,7 +401,7 @@ span.cite {
   bottom: 35px;
   color: #fff;
   font-size: 20px;
-  letter-spacing: 8px;
+  letter-spacing: 6px;
   font-style: italic;
   text-shadow: 2px 2px 2px #000;
   transition: 0.2s;
@@ -471,6 +412,8 @@ span.cite {
   margin-left: 20px;
   margin-right: 20px;
   cursor: pointer;
+  margin-top:80px;
+  transition: 0.2s;
 }
 
 .cfield {
@@ -481,6 +424,7 @@ span.cite {
   overflow-x: hidden;
   max-width: 500px;
   transition: max-width 0.2s;
+  cursor: pointer;
 }
 
 .cfield span {
@@ -501,22 +445,110 @@ span.cite {
   background: linear-gradient(to right, black, black, rgba(0,0,0,0.7));
 }
 
+
 .cf_r {
   right: 0;
   box-shadow: 6px 6px 8px 0 #707070;
   background: linear-gradient(to left, black, black, rgba(0,0,0,0.7));
 }
 
-@media screen and (max-width: 520px) {
+
+
+
+/* Parallax images */
+
+/* Header image */
+.image1 {
+  min-height: 100%;
+  background-image: linear-gradient(to bottom right,  rgba(255, 255, 255, 0.8), transparent), url('img/bg_test4.jpg');
+  /*background-image: linear-gradient(to bottom right,  rgba(255, 255, 255, 0.8), rgba(76, 217, 100, 0.5)), url('img/bg_test.jpg');
+*/}
+
+.contact {
+  min-height: 100%;
+  background-image: linear-gradient(to bottom right,  rgba(255, 255, 255, 0.8), transparent), url('img/contact2.jpg');
+  /*background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.8),  rgba(149, 20, 255, 0.3)), url('img/contact.jpg');
+*/}
+
+.about1 {
+  min-height: 100%;
+  background-image: linear-gradient(to bottom right,  rgba(255, 255, 255, 0.7), transparent), url('img/himmel3.jpg');
+  /*background-image: linear-gradient(to top left, rgba(255, 255, 255, 0.7), rgba(255, 71, 20, 0.5)), url('img/himmel2.jpg');
+*/}
+
+.wih1 {
+  min-height: 100%;
+  background-image: linear-gradient(to bottom right,  rgba(255, 255, 255, 0.6), transparent), url('img/winterishere3.jpg');
+  /*background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.7), rgba(66, 134, 244, 0.5)), url('img/winterishere.jpg');*/
+}
+
+.old1 {
+  min-height: 100%;
+  background-image: linear-gradient(to bottom right,  rgba(255, 255, 255, 0.4), transparent), url('img/awkack3.jpg');
+  /*background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.7), rgba(235, 244, 66, 0.5)), url('img/awkack3.png');*/
+}
+.wih2 {
+  min-height: 500px;
+  background-image: url('img/winterishere2.jpg');
+}
+
+.image3 {
+  min-height: 500px;
+  background-image: url('img/plane.jpg');
+}
+
+.image2 {
+  min-height: 500px;
+  background-image: url('img/samlanuten.jpg');
+}
+
+.about2 {
+  min-height: 400px;
+  background-image: url('img/panorama.jpg');
+}
+
+.about3 {
+  min-height: 500px;
+  background-image: url('img/praha.jpeg');
+}
+
+.image4 {
+  min-height: 700px;
+  background-image: url('img/mount.jpg');
+}
+
+.about4 {
+  min-height: 600px;
+  background-image: url('img/himmel.jpg');
+}
+
+/* EMAIL */
+.at {
+  height:23px;
+  position: relative;
+  padding-right: 3px;
+}
+.dot {
+  height:5px;
+  padding-right: 3px;
+}
+
+
+
+
+
+/* Media queries */
+
+@media screen and (max-width: 520px), (max-height: 500px)  {
     .cfield span {
       padding: 10px;
       padding-left: 15px;
       padding-right: 15px;
       font-size: 25px;
     }
-    .cfield {
-      max-width: 370px;
-    }
+    .at {height:19px}
+    .dot {height:3px}
+    .cfield {max-width: 370px;}
     .caption span.border {
       padding: 14px;
       padding-left: 24px;
@@ -525,13 +557,40 @@ span.cite {
     }
     span.cite {
       font-size: 14px;
-      letter-spacing: 5px;
+      letter-spacing: 4px;
       left: 25px;
       bottom: 20px;
+      text-shadow: 1.5px 1.5px 1.5px #000;
     }
-
-    .logo {
-      font-size:35px;
+    .logo {font-size:35px;}
+    .mid {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     }
+}
 
+@media screen and (max-height: 500px)  {
+  .some {margin-top: 60px;}
+  .bot {top: 30%;}
+}
+
+@media screen and (max-width: 980px)  {
+  .sh_text {display: none;}
+}
+
+@media screen and (max-width: 720px)  {
+  .sh_button, .sh_dropdown, .sh_divider {display: none;}
+  .sh_menu, .sh_menu_b, .sidenav {display: inherit;}
+  .logo {margin-left: 5%;}
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav {font-size: 18px;}
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .bg_img {background-attachment: scroll;}
 }

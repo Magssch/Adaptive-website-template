@@ -11,9 +11,8 @@ $buttons = array(
 // First entry is main link.
               array("Prosjekter",
                     "Denne nettsiden",
-                    "Winter is Here",
-                    "TBD",
-                    "TBD"),
+                    "Teknostart 2017",
+                    "Eldre prosjekter"),
 
 // Define header link labels without dropdown menu
               "Min CV", "Kontakt meg"
@@ -24,10 +23,9 @@ $links = array(
 // Define header links without dropdown menu.
 // First entry is main link.
               array("#",
-                    "about.php",
-                    "https://scratch.mit.edu/projects/171837319/",
-                    "#",
-                    "#"),
+                    "about.php?p=webpage",
+                    "about.php?p=teknostart",
+                    "about.php?p=old"),
 
 // Define header links without dropdown menu
               "cv.php", "contact.php"
@@ -46,7 +44,7 @@ foreach ($buttons as $button) {
 
     foreach($links[$i] as $key => $sublink) {
       if($key <= 0) continue;
-      echo'<a href="' . $sublink . '" style="font-size: 0.6em; padding-left:48px">- ';
+      echo'<a href="' . $sublink . '" style="font-size: 0.6em; padding-left:55px">';
       echo $button[$key];
       echo '</a>';
     }

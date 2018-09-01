@@ -1,6 +1,6 @@
 <?php require "main.php"; ?>
 
-<div class="bg_img image1">
+<div class="bg_img image1" id="duotone">
   <div class="caption">
     <span class="border">Curriculum Vitae</span>
   </div>
@@ -8,9 +8,9 @@
 </div>
 <div class="mid_top"></div>
 <div class="mid">
-<p>Velkommen! Hvorfor ikke like så godt lage en nettside som også fungerer som CV?</p>
-<p>Dette var min tanke med å lage denne siden. Dersom du kun ønsker å se en skriftlig CV kan du trykke på "Min CV" oppe på navigasjonsmenyen, og du vil komme direkte til denne. Dersom du er på mobil finner henter du inn navigasjonmenyen ved å trykke på hamburgermenyen oppe i høye hjørne</p>
-<p>Nettsiden er skrevet i ren HTML, CSS3 og PHP, og benytter seg i tillegg av en del Javascript/JQuery. Siden tilpasser seg automatisk alle mulige skjermstørrelser, så forsøk gjerne med å endre størrelsen på nettleservinduet. Dersom du gjør vinduet smalt nok vil også siden dynamisk gå inn i mobilmodus, med meny tilpasset navigasjon på mobile enheter.</p>
+<p>Velkommen til det jeg har valgt å kalle en CV/teknisk showcase. Denne siden vil vise frem litt av det jeg har erfaring med og har eksperimentert med innen webutvikling og -design siden jeg først begynte med dette i en alder av 12 år.</p>
+<p>Dersom du kun ønsker å se en skriftlig CV kan du trykke på "Min CV" oppe på navigasjonsmenyen, og du vil komme direkte til denne. Dersom du er på mobil finner henter du inn navigasjonmenyen ved å trykke på hamburgermenyen oppe i høye hjørne</p>
+<p>Nettsiden er skrevet i ren HTML, CSS3 og PHP, og benytter seg i tillegg av en del Javascript/JQuery. Siden er med andre ord kodet uten noen form for rammeverk/bibliotek utenom jQuery. Siden tilpasser seg automatisk alle mulige skjermstørrelser, så forsøk gjerne med å endre størrelsen på nettleservinduet. Dersom du gjør vinduet smalt nok vil også siden dynamisk gå inn i mobilmodus, med meny tilpasset navigasjon på mobile enheter.</p>
 </div>
 <div class="mid_bot"></div>
 <div class="bg_img image2">
@@ -24,7 +24,7 @@
 <div class="mid">
 <p>Siden inneholder et utvalg bilder tatt av hobbyfotografen Magnus Schjølberg med sitt mobilkamera. Jeg er veldig glad i fjellturer og har fått en del fine motiver her, i tillegg til mange blinkskudd som jeg tok i løpet av året mitt i Gardemusikken hvor vi reiste på turné i Australia, New Zealand, Skottland, og sør i Norge.
 </p>
-<p>Quisque vehicula sodales orci elementum ullamcorper. Praesent eu pharetra mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id nibh molestie, tristique dui ac, efficitur sapien. Nullam at nulla et tellus auctor accumsan. Curabitur fringilla, justo in hendrerit facilisis, metus massa consequat magna, vitae vestibulum urna mi a sem. Pellentesque maximus eu lectus eget luctus. Praesent fringilla et mauris nec varius.
+<p>Dessverre har jeg ikke så mye mer vittig å komme med på akkurat denne siden. For å gjøre siden litt lengre likevel består resten av paragrafene av god gammel "lorem ipsum" fylltekst.
 </p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis viverra eros, at porttitor est. Sed neque metus, ullamcorper a sodales ac, blandit et neque. Duis at neque eu justo ultricies vulputate. Vestibulum dapibus feugiat dignissim. Pellentesque est leo, tristique id est non, dignissim viverra justo. Pellentesque eu purus ut ipsum condimentum porta. Aliquam placerat pharetra scelerisque. Aliquam turpis turpis, volutpat eget rhoncus in, scelerisque sit amet nulla. Vivamus egestas sed nunc ut posuere. Proin in purus convallis, aliquam dolor ac, egestas lorem. Duis turpis erat, luctus nec semper non, porta ac mi. Nullam aliquam felis a mi ultrices porta. Donec lorem leo, interdum ut sollicitudin vel, consectetur eu justo. Suspendisse viverra laoreet augue, ut vulputate nisi blandit eget.
 </p>
