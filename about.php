@@ -52,6 +52,17 @@ if($_GET['p'] == "webpage")
 </p>
 </div>
 <div class="mid_bot"></div>
+<<<<<<< HEAD
+=======
+<div class="bg_img about4">
+</div>
+<div class="mid_top"></div>
+<div class="mid">
+<p>Cras finibus tempor lectus, vel consequat magna viverra interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non eros mollis, scelerisque tellus eu, ultricies ex. In vitae elit nunc. In efficitur efficitur tellus eu volutpat. Nam posuere suscipit felis, sit amet tempus diam sagittis sed. Duis porta, tortor nec dignissim imperdiet, sem velit suscipit lacus, at sollicitudin nisi lacus in lectus. Ut erat leo, imperdiet id lacinia vitae, pulvinar et purus. Maecenas eu ultrices ex. Aliquam elit massa, lacinia a fermentum sed, tempus vitae sem. Nam sit amet mauris egestas, lobortis diam eget, feugiat tellus.
+</p>
+</div>
+<div class="mid_bot"></div>
+>>>>>>> 27b406aae7d5e56fe509daf75cfabaac6e9dcaa5
 
 <?php
 
@@ -69,7 +80,11 @@ if($_GET['p'] == "webpage")
   <div class="mid">
   <p>Sammen med to andre medelever, Sindre Sivertsen og Hans Kristian Sande, var jeg med og lagde prosjektet som ble stemt frem til 1. plass under kåring av prosjekter på Teknostart i 2017.</p>
   <p>Teknostart er et oppstartsprosjekt som alle nye studenter på ingeniørlinjene på NTNU går gjennom, og datateknologi har som en del av dette et prosjekt hvor man lager et dataspill i Scratch.</p>
+<<<<<<< HEAD
   <p>Spillet ble laget i løpet av noen timer underveis i fadderperioden, og vant kåringen på slutten med god margin.<br/> <br/></p>
+=======
+  <p>Spillet ble laget i løpet av noen timer siste uke i fadderperioden, og vant kåringene på slutten med god margin.<br/> <br/></p>
+>>>>>>> 27b406aae7d5e56fe509daf75cfabaac6e9dcaa5
   <p><center>Link til spillet: <a href="https://scratch.mit.edu/projects/171837319/" target="_blank">Winter is here</a> (kan spilles i nettleser, men krever Flash)
 
   <br/><br/><img src="img/winterishere2.jpg" style="width: 100%;" /></center></p>
@@ -80,6 +95,7 @@ if($_GET['p'] == "webpage")
   <!--<div class="bg_img wih2"></div>-->
   <?php
 
+<<<<<<< HEAD
 } elseif($_GET['p'] == "old") {
 
     ?>
@@ -102,5 +118,11 @@ if($_GET['p'] == "webpage")
 }
 
 
+=======
+}
+
+
+
+>>>>>>> 27b406aae7d5e56fe509daf75cfabaac6e9dcaa5
  ?>
 <?php require "footer.php"; ?>
