@@ -25,12 +25,7 @@ $links = array(
               array("#",
                     "about.php?p=webpage",
                     "about.php?p=teknostart",
-<<<<<<< HEAD
                     "about.php?p=old"),
-=======
-                    "#",
-                    "#"),
->>>>>>> 27b406aae7d5e56fe509daf75cfabaac6e9dcaa5
 
 // Define header links without dropdown menu
               "cv.php", "contact.php"

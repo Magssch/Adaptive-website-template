@@ -258,12 +258,8 @@ a:hover, a:active {
   padding-bottom: 20px;
   background-color: #ffffff;
   font-family: helvetica, verdana, times;
-<<<<<<< HEAD
   /*box-shadow: 0 10px 15px 0 #3a3a3a, 0 -10px 15px 0 #3a3a3a;*/
   box-shadow: 0 0px 30px 0 #000;
-=======
-  box-shadow: 0 10px 15px 0 #b2b2b2, 0 -10px 15px 0 #b2b2b2;
->>>>>>> 27b406aae7d5e56fe509daf75cfabaac6e9dcaa5
   transition: 0.2s;
 }
 
@@ -365,7 +361,6 @@ a:hover, a:active {
 }
 
 .bg_img_f {
-<<<<<<< HEAD
   filter: /*grayscale(100%)*/ blur(4px);
   transition: 1s;
 }
@@ -375,75 +370,6 @@ a:hover, a:active {
   min-height: 100%;
   /*background-image: url('img/mose3.jpg');*/
   background-image: linear-gradient(to bottom right,  rgba(66, 134, 244, 0.3), rgba(76, 217, 100, 0.3)), url('img/mose3.jpg');
-=======
-  filter: grayscale(100%) blur(5px);
-  transition: 1s;
-}
-
-/* Header image */
-.image1 {
-  min-height: 100%;
-  background-image: linear-gradient(to bottom right,  rgba(255, 255, 255, 0.8), rgba(76, 217, 100, 0.5)), url('img/bg_test.jpg');
-}
-
-.contact {
-  min-height: 100%;
-  background-image: linear-gradient(to bottom right, rgba(255, 149, 0, 0.5),  rgba(149, 20, 255, 0.4)), url('img/contact.jpg');
-}
-
-.about1 {
-  min-height: 100%;
-  background-image: linear-gradient(to bottom right, rgba(255, 71, 20, 0.5), rgba(66, 134, 244, 0.4)), url('img/himmel2.jpg');
-}
-
-.wih1 {
-  min-height: 100%;
-  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.7), rgba(66, 134, 244, 0.5)), url('img/winterishere.jpg');
-}
-
-/* Image of plane */
-.wih2 {
-  min-height: 500px;
-  background-image: url('img/winterishere2.jpg');
-}
-
-/* Image of plane */
-.image3 {
-  min-height: 500px;
-  background-image: url('img/plane.jpg');
-}
-/* Image of panorama */
-.image2 {
-  min-height: 500px;
-  background-image: url('img/samlanuten.jpg');
-}
-/* Image of panorama 2 */
-.about2 {
-  min-height: 400px;
-  background-image: url('img/panorama.jpg');
-}
-
-/* Image of panorama 2 */
-.about3 {
-  min-height: 500px;
-  background-image: url('img/praha.jpeg');
-}
-/* Mountain */
-.image4 {
-  min-height: 700px;
-  background-image: url('img/mount.jpg');
-}
-
-.about4 {
-  min-height: 600px;
-  background-image: url('img/dal.jpg');
-}
-
-/* Bottom */
-.bottom {
-  min-height: 100%;
-  background-image: linear-gradient(to bottom right,  rgba(66, 134, 244, 0.8), rgba(76, 217, 100, 0.7)), url('img/mose.jpeg');
->>>>>>> 27b406aae7d5e56fe509daf75cfabaac6e9dcaa5
 }
 
 .caption {
@@ -526,7 +452,6 @@ span.cite {
   background: linear-gradient(to left, black, black, rgba(0,0,0,0.7));
 }
 
-<<<<<<< HEAD
 
 
 
@@ -612,8 +537,6 @@ span.cite {
 
 
 
-=======
->>>>>>> 27b406aae7d5e56fe509daf75cfabaac6e9dcaa5
 /* Media queries */
 
 @media screen and (max-width: 520px), (max-height: 500px)  {
@@ -623,11 +546,8 @@ span.cite {
       padding-right: 15px;
       font-size: 25px;
     }
-<<<<<<< HEAD
     .at {height:19px}
     .dot {height:3px}
-=======
->>>>>>> 27b406aae7d5e56fe509daf75cfabaac6e9dcaa5
     .cfield {max-width: 370px;}
     .caption span.border {
       padding: 14px;
@@ -650,34 +570,19 @@ span.cite {
     padding-bottom: 8px;
     }
 }
-<<<<<<< HEAD
 
 @media screen and (max-height: 500px)  {
   .some {margin-top: 60px;}
   .bot {top: 30%;}
 }
 
-=======
-
-@media screen and (max-height: 500px)  {
-  .some {margin-top: 60px;}
-  .bot {top: 30%;}
-}
-
->>>>>>> 27b406aae7d5e56fe509daf75cfabaac6e9dcaa5
 @media screen and (max-width: 980px)  {
   .sh_text {display: none;}
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 720px)  {
   .sh_button, .sh_dropdown, .sh_divider {display: none;}
   .sh_menu, .sh_menu_b, .sidenav {display: inherit;}
-=======
-@media screen and (max-width: 650px)  {
-  .sh_button, .sh_dropdown, .sh_divider {display: none;}
-  .sh_menu, .sidenav {display: inherit;}
->>>>>>> 27b406aae7d5e56fe509daf75cfabaac6e9dcaa5
   .logo {margin-left: 5%;}
 }
 
