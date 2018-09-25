@@ -252,10 +252,7 @@ a:hover, a:active {
 
 .mid {
   text-align: left;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 80px 20px 80px;
   background-color: #ffffff;
   font-family: helvetica, verdana, times;
   /*box-shadow: 0 10px 15px 0 #3a3a3a, 0 -10px 15px 0 #3a3a3a;*/
@@ -564,10 +561,7 @@ span.cite {
     }
     .logo {font-size:35px;}
     .mid {
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 10px 25px 10px 25px;
     }
 }
 
